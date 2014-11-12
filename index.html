@@ -10,10 +10,31 @@
 	<link rel="stylesheet" href="css/main.css">
 	<script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
 	<script language="JavaScript" type="text/javascript" src="js/app.js"></script>
-	<title>Document</title>
+	<title>Shopping List App</title>
 </head>
 
 <body>
-	
+	<header>
+		<div id="logo"></div>
+		<h1 id="app-name">Shop</h1>
+		<h3 id='by-line'>By Jared</h3>
+
+	</header>
+	<div class="main">
+		<div class="content">
+			<div class="instructions">
+				<h2>Instructions</h2>
+				<ul>
+					<li>Add items</li>
+					<li>Reorder</li>
+					<li>Check off</li>
+				</ul>
+			</div>
+			<input type="text" id="item-input">
+			<input type="number" id="qty">
+			<div class="list"></div>
+		</div>
+	</div>
 </body>
+
 </html>

@@ -1,6 +1,6 @@
 /*Reset Styling*/
 
-/*html, body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -17,8 +17,58 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    font: inherit;
-    font-size: 100%;
-    outline: solid 1px;
-}*/ 
+    /*font: inherit;*/
+    /*font-size: 100%;*/
+    /*outline: solid 1px;*/
+}
 
+* {
+	/*outline: solid red 1px;*/
+}
+
+body {
+	background-color: #D9D9D9;
+}
+
+header {
+	text-align: center;
+	position: relative;
+	height: 15rem;
+	width: 100%;
+	background-image: url('../img/cooking-background.jpg');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: #DA7721;
+}
+
+#app-name {
+	position: relative;
+	top: 5.5rem;
+	font-size: 4rem;
+	letter-spacing: 3px;
+}
+
+#by-line {
+	position: relative;
+	top: 6rem;
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+}
+
+.main {
+	position: relative;
+}
+
+.content {
+	text-align: center;
+}
+
+.instructions {
+	padding: 2rem;
+}
+
+.instructions li {
+	list-style: none;
+	line-height: 1.5rem
+}
