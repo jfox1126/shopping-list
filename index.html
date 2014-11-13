@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<!--<link rel="shortcut icon" type="image/x-icon"  href="img/favicon.ico">-->
-	<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>-->
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 	<!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
 	<link rel="stylesheet" href="css/normalize.css">
@@ -14,25 +14,57 @@
 </head>
 
 <body>
-	<header>
-		<div id="logo"></div>
-		<h1 id="app-name">Shop</h1>
-		<h3 id='by-line'>By Jared</h3>
-
-	</header>
-	<div class="main">
-		<div class="content">
-			<div class="instructions">
+	<div id="app-wrapper">
+		<header>
+			<div id="logo"></div>
+			<h1 id="app-name">Shop</h1>
+			<h3 id='by-line'>By Jared</h3>
+		</header>
+		<div class="main">
+			<!--<div class="instructions">					
 				<h2>Instructions</h2>
 				<ul>
 					<li>Add items</li>
 					<li>Reorder</li>
 					<li>Check off</li>
 				</ul>
+			</div>-->
+			<div class="input-fields">
+				<input type="text" id="item-input" value="Enter items">
+				<input type="number" id="qty-input" value="1">
 			</div>
-			<input type="text" id="item-input">
-			<input type="number" id="qty">
-			<div class="list"></div>
+			<div class="list">
+				<div class="entry" id="001">
+					<i class="fa fa-check"></i>
+					<i class="fa fa-close"></i>
+					<button class="item">Oranges</button>
+					<button class="qty">5</button>
+				</div>
+				<div class="entry" id="002">
+					<i class="fa fa-check"></i>
+					<i class="fa fa-close"></i>
+					<button class="item">Rice</button>
+					<button class="qty">5</button>
+				</div>
+				<div class="entry" id="003">
+					<i class="fa fa-check"></i>
+					<i class="fa fa-close"></i>
+					<button class="item">Sugar</button>
+					<button class="qty">12</button>
+				</div>
+				<div class="entry" id="004">
+					<i class="fa fa-check"></i>
+					<i class="fa fa-close"></i>
+					<button class="item">Chicken</button>
+					<button class="qty">3</button>
+				</div>
+				<div class="entry" id="005">
+					<i class="fa fa-check"></i>
+					<i class="fa fa-close"></i>
+					<button class="item">Beans</button>
+					<button class="qty">4</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
