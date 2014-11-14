@@ -22,18 +22,14 @@ time, mark, audio, video {
     /*outline: solid 1px;*/
 }
 
-* {
-	/*outline: solid red 1px;*/
+/*background-image*/
+html {
+	background: url('../img/cooking-background.jpg') no-repeat center center fixed;
+	background-size: cover;
 }
 
 body {
 	/*background-color: #D9D9D9;*/
-	height: 100%;
-	width: 100%;
-	background-image: url('../img/cooking-background.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-size: 100%;
 	font-family: 'Lobster', cursive;
 }
 
@@ -56,12 +52,7 @@ body {
 	filter: blur(5px);
 }*/
 
-header {
-	text-align: center;
-	position: relative;
-	/*color: #DA7721;*/
-}
-
+/*Header*/
 #app-name {
 	font-size: 4rem;
 	letter-spacing: 5px;
@@ -72,24 +63,9 @@ header {
 	letter-spacing: 1px;
 }
 
-.main {
-	position: relative;
-	text-align: center;
-	l
-}
-
+/*Input fields*/
 .input-fields {
 	margin: 2rem 0 0 0;
-}
-
-#item-input {
-	width: 15rem;
-	text-align: center;
-}
-
-#qty-input {
-	width: 2.5rem;
-	text-align: center;
 }
 
 input {
@@ -97,50 +73,82 @@ input {
 	border-radius: 1.5rem;
 	border: none;
 	height: 1.5rem;
-	letter-spacing: 1px;
+	letter-spacing: 1.5px;
+	text-align: center;
 }
 
-.list button {
-	margin: .5rem 1rem;
+#item-input {
+	width: 15rem;
+}
+
+#qty-input {
+	width: 2.5rem;
+	color: #b0b0b0;
+}
+
+/*List items*/
+.entry {
+	position: relative;
+	display: none;
+	opacity: 0;
+	margin-top: -30px;
+}
+
+.item, .qty {
+	margin: .5rem 0rem;
 	border-radius: 1.5rem;
 	border: none;
-	letter-spacing: 1px;
+	letter-spacing: 1.5px;
+	height: 1.5rem;
 }
 
 .item {
+	margin-left: 0.5rem;
 	width: 15rem;
-	height: 1.5rem;
+	float: left;
 }
 
 .qty {
 	width: 2.5rem;
-	height: 1.5rem;
+	cursor: default;
 }
-.entry {
-	position: relative;
+
+.list > li {
+	list-style: none;
+}
+
+.strike {
+	float: left;
+	width: 20px;
+	height: 24px;
+	margin-left: .9rem;
+	margin-top: .5rem;
+	border: none;
+	background-color: #DA7721;
+	opacity: 0.75;
 }
 
 .list .fa {
-	position: absolute;
-	top: .5rem;
 	font-size: 1.5rem;
 }
 
 .list .fa-check {
+	position: absolute;
 	left: 15.8rem;
 	color: #0D5657;
+	top: .5rem;
+	cursor: pointer;
 }
 
 .list .fa-close {
-	left: 1rem;
+	position: absolute; 
+	left: .9rem;
+	top: .5rem;
 	color: #B14036;
 }
 
-/*.instructions {
-	padding: 2rem;
+.checked-off {
+	background-color: #0D5657;
+	color: #FFFFFF;
+	text-decoration: line-through;
 }
-
-.instructions li {
-	list-style: none;
-	line-height: 1.5rem
-}*/

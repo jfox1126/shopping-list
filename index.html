@@ -16,55 +16,26 @@
 <body>
 	<div id="app-wrapper">
 		<header>
-			<div id="logo"></div>
 			<h1 id="app-name">Shop</h1>
 			<h3 id='by-line'>By Jared</h3>
 		</header>
 		<div class="main">
-			<!--<div class="instructions">					
-				<h2>Instructions</h2>
-				<ul>
-					<li>Add items</li>
-					<li>Reorder</li>
-					<li>Check off</li>
-				</ul>
-			</div>-->
 			<div class="input-fields">
-				<input type="text" id="item-input" value="Enter items">
-				<input type="number" id="qty-input" value="1">
+				<input type="text" id="item-input" placeholder="Enter items">
+				<input type="number" id="qty-input" value="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
 			</div>
-			<div class="list">
-				<div class="entry" id="001">
-					<i class="fa fa-check"></i>
-					<i class="fa fa-close"></i>
-					<button class="item">Oranges</button>
+			<ul class="list">
+				<!--<li class="entry" id="001">
+					<button class="strike"><i class="fa fa-close"></i></button>
+					<button class="item">Oranges<i class="fa fa-check"></i></button>
 					<button class="qty">5</button>
-				</div>
-				<div class="entry" id="002">
-					<i class="fa fa-check"></i>
-					<i class="fa fa-close"></i>
-					<button class="item">Rice</button>
+				</li>
+				<li class="entry" id="001">
+					<button class="strike"><i class="fa fa-close"></i></button>
+					<button class="item">Oranges<i class="fa fa-check"></i></button>
 					<button class="qty">5</button>
-				</div>
-				<div class="entry" id="003">
-					<i class="fa fa-check"></i>
-					<i class="fa fa-close"></i>
-					<button class="item">Sugar</button>
-					<button class="qty">12</button>
-				</div>
-				<div class="entry" id="004">
-					<i class="fa fa-check"></i>
-					<i class="fa fa-close"></i>
-					<button class="item">Chicken</button>
-					<button class="qty">3</button>
-				</div>
-				<div class="entry" id="005">
-					<i class="fa fa-check"></i>
-					<i class="fa fa-close"></i>
-					<button class="item">Beans</button>
-					<button class="qty">4</button>
-				</div>
-			</div>
+				</li>-->				
+			</ul>
 		</div>
 	</div>
 </body>
